@@ -120,19 +120,20 @@ vendor/firmware/mfc_fw.bin
 -vendor/lib/hw/gralloc.exynos9810.so|874a33156ca7eef3a3823ae94dd645cb
 -vendor/lib64/hw/gralloc.exynos9810.so|ab59fc6050f34ea1fe3a45282ecc5efa
 
-# GPS/GNSS
--vendor/bin/hw/gpsd
--vendor/bin/hw/lhd
--vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
-vendor/etc/gnss/gps.cer
-vendor/etc/gnss/gps.xml
-vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
-vendor/etc/sensor/lhd.conf
--vendor/lib64/hw/gps.default.so
--vendor/lib64/hw/android.hardware.gnss@2.0-impl.so
--vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
--vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+# GPS/GNSS - N770FXXU8HVK5
+-vendor/bin/hw/gpsd|715cc3de92e9913cd09bd77ff561184b
+-vendor/bin/hw/lhd|7d4dfce04564545fa6a5411abba66c36
+-vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service|858caf11644eb9ba717125a06e3f929a
+-vendor/etc/gnss/gps.cer|23319bc3e91ead266696fef65eb61034
+-vendor/etc/gnss/gps.xml|ed0a2ac2d01d8a9712bfaeaebeb642c8
+-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc|d92ad71448a53097d840a64c26f419a0
+-vendor/etc/sensor/lhd.conf|dc80bcd056ffd57d49b991080a7cb88e
+-vendor/lib/libwrappergps.so|009b5586e90a53e707236691d1c5ca50
+-vendor/lib64/hw/gps.default.so|48808c787459404162fed1972c4ac0bb
+-vendor/lib64/hw/android.hardware.gnss@2.0-impl.so|0a37cf24a4b35f4105979f106b9c73c6
+-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so|db56839d89fe4bb6bb7ea21e205cc9b3
+-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so|cf9cae7ca98509d229b3636ab586db6f
+-vendor/lib64/libwrappergps.so|c3560d0fa1d78281ac1e5cc731457c17
 
 # Graphics/Mali - N770FXXU8HVK5
 -vendor/etc/snap_gpu_kernel_64.bin|886a578b86dc0ab9de562d0f0f53f122
