@@ -323,7 +323,7 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.samsungexynos9810.rc \
     init.samsungexynos9810.usb.rc \
-    init.vendor.rilchip.samsungexynos9810.rc \
+    vendor.sem.rilchip.samsungexynos9810.rc \
     init.vendor.rilcommon.samsungexynos9810.rc \
     mobicore.rc \
     ueventd.samsungexynos9810.rc \
