@@ -13,7 +13,14 @@ service ril-daemon /vendor/bin/hw/rild
     onrestart restart cpboot-daemon
     onrestart restart cpboot-daemon5g
     onrestart restart DIAG-daemon
-    override
+
+service ril-daemon1 /vendor/bin/hw/rild -c 2
+    class main
+    user radio
+    group radio cache inet misc audio sdcard_r sdcard_rw log vpn system readproc wakelock
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW SYS_ADMIN CHOWN SYS_TIME
+    onrestart restart cpboot-daemon
+    onrestart restart DIAG-daemon
 
 # LSI CDMA project daemon support dun function
 service VC-daemon /vendor/bin/vcd
@@ -22,4 +29,3 @@ service VC-daemon /vendor/bin/vcd
     group system
     disabled
     seclabel u:r:vcd:s0
-    override
