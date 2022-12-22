@@ -273,13 +273,14 @@ PRODUCT_PACKAGES += \
     fstab.samsungexynos9810 \
     init.baseband.rc \
     init.gps.samsungexynos9810.rc \
+    init.pressure.samsungexynos9810.rc \
     init.recovery.samsungexynos9810.rc \
     init.samsung.rc \
     init.samsungexynos9810.rc \
     init.samsungexynos9810.usb.rc \
     init.vendor.rilchip.samsungexynos9810.rc \
     init.vendor.rilcommon.samsungexynos9810.rc \
-    mobicore.rc\
+    mobicore.rc \
     ueventd.samsungexynos9810.rc \
     wifi.samsungexynos9810.rc \
     wifi_brcm.samsungexynos9810.rc

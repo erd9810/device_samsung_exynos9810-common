@@ -21,6 +21,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.pressure.samsungexynos9810.rc",
+    src: "etc/init.pressure.rc",
+    filename: "init.pressure.rc",
+    relative_install_path: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.samsung.rc",
     src: "etc/init.samsung.rc",
     relative_install_path: "init/hw",
