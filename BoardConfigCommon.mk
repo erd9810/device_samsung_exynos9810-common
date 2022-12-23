@@ -57,6 +57,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET)
 
 # Compression
 BOARD_EROFS_COMPRESSOR := lz4
+BOARD_EROFS_PCLUSTER_SIZE := 262144
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
