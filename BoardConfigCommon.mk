@@ -97,6 +97,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos9810
+TARGET_LINUX_KERNEL_VERSION := 4.9
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
@@ -117,9 +118,10 @@ BOARD_ROOT_EXTRA_FOLDERS := efs
 
 ## Platform
 BOARD_VENDOR := samsung
-TARGET_BOARD_PLATFORM := universal9810
+TARGET_BOARD_PLATFORM := exynos9810
 TARGET_SLSI_VARIANT := bsp
 TARGET_SOC := exynos9810
+TARGET_SOC_NAME := exynos
 TARGET_BOOTLOADER_BOARD_NAME := exynos9810
 
 ## Properties
@@ -162,3 +164,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
+
+# SLSI
+include $(COMMON_PATH)/BoardConfigSLSI.mk
