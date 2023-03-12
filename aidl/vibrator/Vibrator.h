@@ -59,7 +59,7 @@ public:
 
 private:
     ndk::ScopedAStatus activate(uint32_t ms);
-    static uint32_t effectToMs(Effect effect, ndk::ScopedAStatus* status);
+    uint32_t effectToMs(Effect effect, ndk::ScopedAStatus* status);
     static uint8_t strengthToAmplitude(EffectStrength strength, ndk::ScopedAStatus* status);
 
     bool mEnabled{false};
@@ -69,6 +69,9 @@ private:
     bool mIsTimedOutVibrator;
     bool mHasTimedOutIntensity;
     bool mHasTimedOutEffect;
+
+    int mClickDuration = 10;
+    int mTickDuration = 5;
 };
 
 } // namespace vibrator
