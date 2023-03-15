@@ -84,9 +84,6 @@ debug.sf.high_fps_late_sf_phase_offset_ns=0
 ro.hardware.egl=mali
 ro.hardware.vulkan=mali
 
-# HWCOMPOSER
-vendor.hwc.exynos.vsync_mode=0
-
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
