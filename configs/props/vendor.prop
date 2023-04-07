@@ -82,6 +82,7 @@ debug.sf.high_fps_late_sf_phase_offset_ns=0
 
 # HARDWARE
 ro.hardware.egl=mali
+ro.hardware.gralloc=exynos9810
 ro.hardware.vulkan=mali
 
 # HWUI
