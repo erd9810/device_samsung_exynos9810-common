@@ -87,6 +87,7 @@ ro.hardware.gralloc=exynos9810
 ro.hardware.vulkan=mali
 
 # HWUI
+ro.hwui.render_ahead=20
 debug.hwui.skia_atrace_enabled=false
 
 # Set the display mode to automatic by default
