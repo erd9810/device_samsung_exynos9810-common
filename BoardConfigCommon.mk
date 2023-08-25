@@ -15,6 +15,8 @@
 
 COMMON_PATH := device/samsung/exynos9810-common
 
+TARGET_EXYNOS_EXT4_VARIANT ?= true
+
 BUILD_BROKEN_DUP_RULES := true
 
 ## Include path
