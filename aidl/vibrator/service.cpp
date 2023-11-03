@@ -14,10 +14,11 @@ using ::aidl::android::hardware::vibrator::Vibrator;
 
 int main() {
     ABinderProcess_setThreadPoolMaxThreadCount(0);
-    std::shared_ptr<Vibrator> vibrator = ndk::SharedRefBase::make<Vibrator>();
 
-    const std::string instance = std::string() + Vibrator::descriptor + "/default";
-    binder_status_t status = AServiceManager_addService(vibrator->asBinder().get(), instance.c_str());
+    // make the vibrator manager service
+    std::shared_ptr<Vibrator> vibrator = ndk::SharedRefBase::make<Vibrator>();
+    binder_status_t status = AServiceManager_addService(
+            vibrator->asBinder().get(), Vibrator::makeServiceName("default").c_str());
     CHECK_EQ(status, STATUS_OK);
 
     ABinderProcess_joinThreadPool();
