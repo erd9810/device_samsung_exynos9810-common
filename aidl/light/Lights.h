@@ -27,20 +27,6 @@ public:
 
 private:
     void handleBacklight(const HwLightState& state);
-#ifdef BUTTON_BRIGHTNESS_NODE
-    void handleButtons(const HwLightState& state);
-#endif /* BUTTON_BRIGHTNESS_NODE */
-#ifdef LED_BLINK_NODE
-    void handleBattery(const HwLightState& state);
-    void handleNotifications(const HwLightState& state);
-    void handleAttention(const HwLightState& state);
-    void setNotificationLED();
-    uint32_t calibrateColor(uint32_t color, int32_t brightness);
-
-    HwLightState mAttentionState;
-    HwLightState mBatteryState;
-    HwLightState mNotificationState;
-#endif /* LED_BLINK_NODE */
 
     uint32_t rgbToBrightness(const HwLightState& state);
 
