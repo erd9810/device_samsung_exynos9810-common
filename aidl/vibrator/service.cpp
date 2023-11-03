@@ -18,7 +18,7 @@ int main() {
 
     const std::string instance = std::string() + Vibrator::descriptor + "/default";
     binder_status_t status = AServiceManager_addService(vibrator->asBinder().get(), instance.c_str());
-    CHECK(status == STATUS_OK);
+    CHECK_EQ(status, STATUS_OK);
 
     ABinderProcess_joinThreadPool();
     return EXIT_FAILURE; // should not reach

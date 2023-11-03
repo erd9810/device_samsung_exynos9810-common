@@ -65,7 +65,7 @@ int main() {
 
     const std::string instance = std::string() + Power::descriptor + "/default";
     binder_status_t status = AServiceManager_addService(pw->asBinder().get(), instance.c_str());
-    CHECK(status == STATUS_OK);
+    CHECK_EQ(status, STATUS_OK);
     LOG(INFO) << "Pixel Power HAL AIDL Service with Extension is started.";
 
     if (::android::base::GetIntProperty("vendor.powerhal.adpf.rate", -1) != -1) {
