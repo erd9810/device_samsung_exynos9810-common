@@ -132,7 +132,7 @@ struct pcm_config pcm_config_primary_playback = {
 
 // PCM Configurations for Fast Playback Stream
 #define FAST_PLAYBACK_CARD              SOUND_CARD0
-#define FAST_PLAYBACK_DEVICE            SOUND_DEVICE_ABOX_RDMA1
+#define FAST_PLAYBACK_DEVICE            SOUND_DEVICE_ABOX_RDMA2
 
 #define FAST_PLAYBACK_CHANNELS          DEFAULT_MEDIA_CHANNELS
 #define FAST_PLAYBACK_SAMPLING_RATE     DEFAULT_MEDIA_SAMPLING_RATE
