@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
     android.hardware.gnss.visibility_control@1.0.vendor:64 \
     android.hardware.gnss@2.0.vendor:64 \
