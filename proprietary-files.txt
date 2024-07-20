@@ -208,7 +208,7 @@ vendor/lib64/hw/thermal.exynos9810.so
 # Widevine - N770FXXU8HVK5
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 -vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/lib/libwvhidl
+-vendor/lib/libwvhidl|23b08dd1e8cb35d88861dabee5734caa
 
 # Wi-Fi - N770FXXU8GVF2
 vendor/etc/init/wifi.rc
