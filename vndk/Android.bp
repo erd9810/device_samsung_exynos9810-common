@@ -1,15 +1,15 @@
 cc_prebuilt_library_shared {
-	name: "libutils-v32",
+	name: "libutils-tm",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["lib/libutils-v32.so"],
+			srcs: ["lib/libutils-tm.so"],
 		},
 		android_arm64: {
-			srcs: ["lib64/libutils-v32.so"],
+			srcs: ["lib64/libutils-tm.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -19,14 +19,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcrypto-v33",
+	name: "libcrypto-tm",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["lib64/libcrypto-v33.so"],
+			srcs: ["lib64/libcrypto-tm.so"],
 		},
 	},
 	compile_multilib: "64",

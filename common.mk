@@ -374,8 +374,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libcrypto-v33 \
-    libutils-v32
+    libcrypto-tm \
+    libutils-tm
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
