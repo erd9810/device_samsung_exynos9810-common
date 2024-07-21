@@ -3568,6 +3568,10 @@ bool proxy_set_route(void *proxy, int ausage, int device, int modifier, bool set
 
     modifier_type routed_modifier = (modifier_type)modifier;
 
+    // HACK: Force dual speaker
+    if (routed_device == DEVICE_SPEAKER)
+        routed_device = DEVICE_SPEAKER_DUAL;
+
     if (set) {
         if (routed_device < DEVICE_MAIN_MIC) {
             /* Do Specific Operation based on Audio Path */
