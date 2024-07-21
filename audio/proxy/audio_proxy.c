@@ -3568,10 +3568,6 @@ bool proxy_set_route(void *proxy, int ausage, int device, int modifier, bool set
 
     modifier_type routed_modifier = (modifier_type)modifier;
 
-    // HACK: Force dual speaker
-    if (routed_device == DEVICE_SPEAKER)
-        routed_device = DEVICE_SPEAKER_DUAL;
-
     if (set) {
         if (routed_device < DEVICE_MAIN_MIC) {
             /* Do Specific Operation based on Audio Path */
@@ -4634,6 +4630,9 @@ void * proxy_init(void)
     aproxy->offload_effect_lib = NULL;
     aproxy->offload_effect_lib_update = NULL;
     aproxy->spk_ampL_powerOn = false;
+
+    // Force dual speaker
+    aproxy->support_dualspk = true;
 
     proxy_set_board_info(aproxy);
 
