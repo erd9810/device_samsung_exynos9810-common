@@ -127,7 +127,6 @@ PRODUCT_PACKAGES += \
 # Graphics
 PRODUCT_PACKAGES += \
     libcsc \
-    libexynosgscaler \
     libexynosutils \
     libexynosscaler \
     libexynosv4l2 \
