@@ -105,6 +105,7 @@ TARGET_LINUX_KERNEL_VERSION := 4.9
 # Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/device_compatibility_matrix.xml
 
 # NGA
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
