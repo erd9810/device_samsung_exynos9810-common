@@ -146,9 +146,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.samsungexynos9810
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
-
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
