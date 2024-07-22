@@ -79,6 +79,7 @@ Only the three quirks included above are recognized at this point:
 
 <MediaCodecs>
     <Settings>
+        <Domain name="telephony" enabled="true" />
         <Setting name="supports-multiple-secure-codecs" value="true" />
         <Setting name="supports-secure-with-non-secure-codec" value="true" />
         <Setting name="max-video-encoder-input-buffers" value="9" />
@@ -220,7 +221,6 @@ Only the three quirks included above are recognized at this point:
             </Type>
         </MediaCodec>
     </Decoders>
-
     <Encoders>
         <MediaCodec name="OMX.Exynos.AVC.Encoder" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
@@ -344,8 +344,4 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="1" />
         </MediaCodec>
     </Encoders>
-    <Include href="media_codecs_google_video.xml" />
-    <Include href="media_codecs_google_audio.xml" />
-    <Include href="media_codecs_google_telephony.xml" />
-
 </MediaCodecs>
