@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudioroute \
+    libprocessgroup.vendor \
     libtinyalsa \
     libtinycompress
 
@@ -143,6 +144,7 @@ PRODUCT_PACKAGES += \
 
 # HWJPEG
 PRODUCT_PACKAGES += \
+    libexpat.vendor \
     libhwjpeg
 
 # GNSS
@@ -303,6 +305,8 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libnetutils.vendor \
+    libsqlite.vendor \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
