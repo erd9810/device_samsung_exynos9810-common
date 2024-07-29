@@ -185,6 +185,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.exynos9810
 
 # Media
+PRODUCT_PACKAGES += \
+    libstagefright_softomx_plugin.vendor
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(COMMON_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
